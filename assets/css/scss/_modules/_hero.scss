@@ -10,14 +10,6 @@
     color: var(--col-text-reverse);
 }
 
-@media screen and ( max-width: 34.99em ) {
-    .block--hero {
-        padding-top: var(--base);
-        padding-bottom: var(--base);
-    }
-}
-
-
 .block--hero > * {
     grid-row: 1/1;
     grid-column: 1/1;
@@ -52,9 +44,8 @@
     
 }
 
-.block--hero figure > * {
-    margin: 0 auto;
-}
+.block--hero figure > * { margin: 0 auto; }
+
 .block--hero::after {
     content: "";
     position: absolute;
@@ -70,6 +61,20 @@
     background: linear-gradient(180deg, rgba(47,174,229,1) 0%, rgba(33,44,85,1) 100%);
 }
 
+@media screen and ( max-width: 34.99em ) {
+    
+    .block--hero {
+        padding-top: var(--base);
+        padding-bottom: var(--base);
+    }
+    
+    .hero__text { grid-row: 1/2; }
+    
+    .block--hero figure {
+        grid-row: 2/-1;
+        padding-top: 0;
+    }
+}
 
 
 @media screen and ( min-width: 45em ) {

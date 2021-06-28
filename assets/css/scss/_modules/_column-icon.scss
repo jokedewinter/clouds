@@ -12,7 +12,12 @@
     margin-right: 1em;
 }
 
+
 .column__icon .text__title {
     padding: 1em 0 1.5em 0;
     color: var(--col-text);
 }
+
+
+.dark .column__icon .svg__icon { padding-right: 0; }
+.dark .column__icon .text__title { color: var(--col-text-reverse); }

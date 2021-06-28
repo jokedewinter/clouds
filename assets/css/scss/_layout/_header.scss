@@ -9,17 +9,17 @@
 }
 
 
-.site__navigation li {
+.nav__menu li {
     @include font-size(16);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
  }
     
-.site__navigation li a { color: var(--col-brand); }
+.nav__menu li a { color: var(--col-brand); }
 
-.site__navigation li a:hover, 
-.site__navigation li a.current { color: var(--col-text); }
+.nav__menu li a:hover,
+.nav__menu li a.current { color: var(--col-text); }
 
 
 

@@ -2,15 +2,18 @@
 /* Site footer
  * ------------------------------------------------------------- */
 
-.site__footer {
-    padding: var(--between) 0;
+.site__footer { padding: var(--between) 0; }
+.site__footer p { @include font-size(16); }
+
+.site__footer .nav__menu {
+    @include no-bullets();
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
 }
 
+.site__footer .nav__menu li { margin-right: 1em; }
 
-.site__footer p {
-    @include font-size(16);
-    padding-bottom: 0;
-}
 
 
 /* Colophon author
